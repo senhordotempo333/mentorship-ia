@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoria em Agentes de IA</title>
+  <link rel="stylesheet" href="../landing-page/styles.css">
+  <style>
+    @font-face {
+      font-family: 'MatrixCode';
+      src: url('fonts/MatrixCodeVF.woff2') format('woff2-variations');
+      font-weight: 100 900;
+      font-stretch: 75% 125%;
+    }
+    
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(2px, -2px); }
+      60% { transform: translate(-2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+    
+    h1, h2, h3 {
+      font-family: 'MatrixCode', monospace;
+      font-variation-settings: 'wght' 700, 'wdth' 100;
+      transition: font-variation-settings 0.3s ease;
+    }
+    
+    h1:hover, h2:hover, h3:hover {
+      animation: glitch 0.5s linear;
+      font-variation-settings: 'wght' 900, 'wdth' 125;
+    }
+    
+    .blinking-cursor {
+      font-variation-settings: 'wght' 900;
+    }
+
+    /* Footer Styles */
+    footer {
+      background: rgba(0,0,0,0.9);
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid #00ff00;
+      text-align: center;
+      color: #00ff00;
+      font-family: 'MatrixCode', monospace;
+    }
+    
+    footer a {
+      color: #00ff00;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+    
+    footer a:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="matrix-rain"></div>
+  <div class="terminal-effect"></div>
+  <div class="matrix-cube-container">
+    <div class="matrix-cube">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face right"></div>
+      <div class="face left"></div>
+      <div class="face top"></div>
+      <div class="face bottom"></div>
+    </div>
+  </div>
+  <canvas class="particles"></canvas>
+
+  <div class="container">
+    <header class="matrix-header" style="position: static; width: 100%; background: rgba(0,0,0,0.9); padding: 5px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.5); margin-bottom: 20px;">
+      <nav>
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#modules">Módulos</a></li>
+          <li><a href="#bonus">Bônus</a></li>
+          <li><a href="#mentorship">Mentoria</a></li>
+          <li><a href="#investment">Investimento</a></li>
+        </ul>
+      </nav>
+      <div class="matrix-code">
+        <div class="code-line">> Initializing Mentorship Program...</div>
+        <div class="code-line">> Loading AI modules...</div>
+        <div class="code-line">> System ready [version 1.0]</div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <h1>🔥 Programa de Mentoria Exclusiva em Agentes de IA – Vagas Limitadas 🔥 <span class="blinking-cursor">_</span></h1>
+      <div class="hero-content">
+        <p class="highlight-text">Marcelo, essa é uma oportunidade única para aprender tudo sobre Inteligência Artificial, automação e agentes de IA, em um programa prático e direto ao ponto, com suporte personalizado e mentoria focada no seu desenvolvimento!</p>
+      </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section id="modules" class="modules-section">
+      <h2>📚 O que você vai aprender durante os 3 meses: <span class="blinking-cursor">_</span></h2>
+      
+      <div class="module-card">
+        <h3>🔹 Módulo 1 – Masterclass de ChatGPT e LLMs</h3>
+        <p>Aprenda a interagir perfeitamente com diversas LLMs usando engenharia de prompt. Você vai dominar a arte de pedir exatamente o que quer para obter respostas precisas e resultados rápidos em qualquer área.</p>
+      </div>
+
+      <div class="module-card">
+        <h3>🔹 Módulo 2 – Revolução na forma de usar o computador</h3>
+        <p>Descubra como transformar seu computador em um verdadeiro hub inteligente, usando comando de voz e integração sistemática de várias IAs. Com isso, você será capaz de:</p>
+        <ul>
+          <li>Programar sem esforço</li>
+          <li>Criar sites, vídeos, imagens e aplicativos com qualidade profissional</li>
+          <li>Resolver tarefas complexas em minutos, sem precisar entender tudo tecnicamente</li>
+        </ul>
+      </div>
+
+      <div class="module-card">
+        <h3>🔹 Módulo 3 – Instalação de Servidor e Ferramentas Avançadas</h3>
+        <p>Aqui entra o módulo completo do curso Automatrix:</p>
+        <ul>
+          <li>Aprenda a instalar e configurar 65+ ferramentas de IA diretamente dos repositórios GitHub</li>
+          <li>Desde N8N e Typebot até WordPress e Grafana, você terá passo a passo detalhado para instalar, rodar e automatizar cada uma delas</li>
+          <li>Descubra como criar agentes de IA capazes de automatizar tarefas e processos inteiros para qualquer negócio</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Bonus Section -->
+    <section id="bonus" class="bonus-section">
+      <h2>🎁 Bônus Exclusivos <span class="blinking-cursor">_</span></h2>
+      <div class="bonus-grid">
+        <div class="bonus-card">
+          <h3>✨ R$ 1.000 de crédito para servidor</h3>
+          <p>Comece suas automações sem custos adicionais!</p>
+        </div>
+        <div class="bonus-card">
+          <h3>✨ Templates prontos</h3>
+          <p>Copie, cole e rode suas primeiras automações em minutos.</p>
+        </div>
+        <div class="bonus-card">
+          <h3>✨ Guia de Estudo Completo</h3>
+          <p>Melhores ferramentas, canais e materiais de aprendizado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentorship Section -->
+    <section id="mentorship" class="mentorship-section">
+      <h2>🗓️ Como funciona a mentoria <span class="blinking-cursor">_</span></h2>
+      <div class="mentorship-details">
+        <div class="detail-card">
+          <h3>✔️ 2 encontros por semana</h3>
+          <p>1 aula coletiva + 1 aula individual</p>
+        </div>
+        <div class="detail-card">
+          <h3>🔧 Duração: 3 meses</h3>
+          <p>Total de 24 encontros ao vivo</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section id="investment" class="investment-section">
+      <h2>💰 Pacotes e Investimento <span class="blinking-cursor">_</span></h2>
+      <div class="package-grid">
+        <div class="package-card">
+          <h3>Pacote Básico</h3>
+          <p>3 meses sem instalação de ferramentas</p>
+          <p class="price">R$ 1.500,00</p>
+        </div>
+        <div class="package-card">
+          <h3>Pacote Completo</h3>
+          <p>3 meses com instalação completa</p>
+          <p class="price">R$ 5.000,00</p>
+        </div>
+      </div>
+      <div class="cta-buttons" style="text-align: center; margin: 40px 0;">
+        <a href="https://checkout.nubank.com.br/Kl2KzEudqez6kmu" class="cta-button" style="margin: 10px;">
+          Garanta o Pacote Básico por R$1.500 &rarr;
+        </a>
+        <a href="https://checkout.nubank.com.br/jg5mSMrLgBz6kmu" class="cta-button" style="margin: 10px;">
+          Instalação + Mentoria Completa por R$5.000 &rarr;
+        </a>
+      </div>
+      <div style="text-align: center; max-width: 800px; margin: 0 auto 40px;">
+        <p style="font-size: 1.2em; line-height: 1.6;">
+          Não perca esta oportunidade única de transformar sua carreira! Escolha o pacote que melhor se adapta às suas necessidades e dê o primeiro passo para dominar as mais avançadas tecnologias de IA. Vagas limitadas - garanta já sua participação!
+        </p>
+      </div>
+    </section>
+
+    <!-- AI Models Section -->
+    <section id="ai-models" class="ai-models-section">
+      <h2>🧠 Lista Completa de IAs, LLMs e Modelos <span class="blinking-cursor">_</span></h2>
+      
+      <div class="category-card">
+        <h3>1. OpenAI – LLMs e Agentes</h3>
+        <ul>
+          <li>GPT-4 e GPT-3.5 Turbo para chatbots e geração de conteúdo</li>
+          <li>Codex para criação de códigos com engenharia de prompt</li>
+          <li>DALL-E 2 para geração de imagens profissionais</li>
+          <li>Whisper para transcrição e tradução de áudios</li>
+          <li>AutoGPT e BabyAGI para agentes autônomos</li>
+          <li>ChatGPT Plugins e Function Calling Agents</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h3>2. Google DeepMind – Modelos e Plataformas</h3>
+        <ul>
+          <li>PaLM 2 e Bard para assistentes virtuais</li>
+          <li>Imagen para geração de imagens realistas</li>
+          <li>MusicLM para criação de músicas e efeitos sonoros</li>
+          <li>MedPaLM para diagnóstico médico</li>
+          <li>Google Assistant com Bard</li>
+          <li>AutoML Agents</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h3>3. Meta (Facebook AI Research)</h3>
+        <ul>
+          <li>LLaMA 2 para treinamento de modelos</li>
+          <li>BlenderBot para bots de atendimento</li>
+          <li>Segment Anything Model (SAM) para análise de imagens</li>
+          <li>DINOv2 para visão computacional</li>
+          <li>Meta Agents e CICERO Agents</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h3>4. Hugging Face – LLMs Open-Source</h3>
+        <ul>
+          <li>BERT, GPT-Neo e BLOOM para NLP</li>
+          <li>CLIP para modelos multimodais</li>
+          <li>DistilBERT para modelos leves</li>
+          <li>AutoTrain para treinamento sem código</li>
+          <li>Transformers Agents e Spaces Agents</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h3>5. Anthropic – Modelos Claude</h3>
+        <ul>
+          <li>Claude 2 e Claude Instant para chatbots avançados</li>
+          <li>Agentes Claude para atendimento ao cliente</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h3>6. Microsoft – Plataformas de IA</h3>
+        <ul>
+          <li>Turing-NLG e Orca para automação de conteúdos</li>
+          <li>Valle-E para síntese de voz</li>
+          <li>GitHub Copilot para automação de codificação</li>
+          <li>Power Automate Agents e Copilot Agents</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h3>7. Groq – IA de Alta Performance</h3>
+        <ul>
+          <li>GroqFlow para aceleração de modelos</li>
+          <li>Pipelines otimizados para hardware especializado</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h3>8. IBM Watson</h3>
+        <ul>
+          <li>Watson Assistant para atendimento automatizado</li>
+          <li>Watson Discovery para análise de documentos</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h3>9. Stability AI</h3>
+        <ul>
+          <li>Stable Diffusion para geração de imagens</li>
+          <li>DreamBooth para personalização de modelos</li>
+          <li>StableLM para modelos de linguagem leves</li>
+          <li>Stability Agents para design gráfico</li>
+        </ul>
+      </div>
+
+      <div class="category-card">
+        <h3>10. DeepMind – Modelos Específicos</h3>
+        <ul>
+          <li>AlphaCode para geração automática de código</li>
+          <li>AlphaFold para previsão de estruturas de proteínas</li>
+        </ul>
+      </div>
+
+      <div class="total-models">
+        <h3>🎯 O que você vai dominar:</h3>
+        <ul>
+          <li>Interação com as principais LLMs do mercado</li>
+          <li>Criação de agentes autônomos personalizados</li>
+          <li>Automação de processos completos</li>
+          <li>Treinamento e deploy de modelos próprios</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools-section">
+      <h2>🛠️ Lista Completa de Ferramentas da Mentoria <span class="blinking-cursor">_</span></h2>
+      
+      <div class="category-card">
+        <h3>🔧 Ferramentas de Automação e Integração</h3>
+        <ol>
+          <li>Traefik & Portainer – Gerenciamento de containers e serviços</li>
+          <li>N8N + Nodes Quepasa – Automação de fluxos de trabalho com IA</li>
+          <li>Flowise – Construção de fluxos de IA sem código</li>
+          <li>LangFlow – Criação de agentes de IA com interface gráfica</li>
+          <li>RabbitMQ – Fila de mensagens para processamento assíncrono</li>
+          <li>Uptime Kuma – Monitoramento de serviços e servidores</li>
+          <li>Supabase – Plataforma de banco de dados com API instantânea</li>
+          <li>LowCoder – Automação de processos com baixa necessidade de código</li>
+          <li>Quepasa API – Integração de WhatsApp com automações</li>
+        </ol>
+      </div>
+
+      <div class="category-card">
+        <h3>🧠 Ferramentas de IA e Machine Learning</h3>
+        <ol>
+          <li>Chatwoot – Ferramenta de comunicação automatizada</li>
+          <li>Evolution API – API para agentes de IA personalizados</li>
+          <li>Anything LLM – Plataforma para hospedar e treinar modelos de linguagem</li>
+          <li>Dify AI – Ferramenta no-code para criação de assistentes com IA</li>
+          <li>Leonardo.ai – Criação de imagens geradas por IA com personalização avançada</li>
+          <li>Ollama – Plataforma para rodar modelos de linguagem grandes localmente</li>
+          <li>Toolset – Conjunto de ferramentas de IA para automação e análise</li>
+          <li>Bolt DIY – Solução exclusiva para automações rápidas com IA</li>
+          <li>Fathom – Resumo automatizado de reuniões e anotações inteligentes</li>
+        </ol>
+      </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2023 Mentoria em Agentes de IA. Todos os direitos reservados.</p>
+      <p>Contato: <a href="mailto:suporte@mentoriaia.com">suporte@mentoriaia.com</a></p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
